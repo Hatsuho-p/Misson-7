@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color"
+      content="#ff7a00">
+
+<title>
+アークアカデミー英会話教室
+Halloween Mission Rally
+</title>
+
+
+<style>
+
+/* =========================
+   COLOR
+========================= */
+
+:root {
+
+    --orange: #ff7a00;
+    --orange-light: #ff9d2e;
+
+    --purple: #6c2bd9;
+    --purple-dark: #32124f;
+
+    --yellow: #ffd83d;
+    --pink: #ff5fa2;
+
+    --cream: #fff7e8;
+
+    --white: #ffffff;
+
+    --green: #38b56b;
+}
+
+
+/* =========================
+   BASIC
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        "Noto Sans JP",
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 10%,
+            #fff1a8 0 6%,
+            transparent 7%
+        ),
+
+        linear-gradient(
+            180deg,
+            #2b1045,
+            #54206e 45%,
+            #ff7a00 140%
+        );
+
+    color: #24112f;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background: var(--cream);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--orange),
+            var(--orange-light)
+        );
+
+    color: white;
+
+    padding:
+        18px 18px 25px;
+
+    position: relative;
+
+    border-radius:
+        0 0 30px 30px;
+}
+
+
+header::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 16px;
+
+    top: 12px;
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: #fff4a3;
+
+    opacity: .3;
+}
+
+
+.school-name {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 15px;
+
+    font-weight: 900;
+
+    letter-spacing: .03em;
+
+    margin-bottom: 7px;
+}
+
+
+.brand {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    opacity: .95;
+}
+
+
+header h1 {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    margin:
+        8px 0 6px;
+
+    text-shadow:
+        2px 2px 0 #7a2b00;
+}
+
+
+.subtitle {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-weight: 800;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+
+    padding: 18px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    background: white;
+
+    border:
+        3px solid #2d1740;
+
+    border-radius: 24px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 7px 0 #2d1740;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   START
+========================= */
+
+.hero {
+
+    text-align: center;
+}
+
+
+.school-logo-text {
+
+    display: inline-block;
+
+    background:
+        var(--purple);
+
+    color: white;
+
+    padding:
+        7px 12px;
+
+    border-radius:
+        999px;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    margin-bottom: 10px;
+}
+
+
+.hero .pumpkin {
+
+    font-size: 72px;
+
+    filter:
+        drop-shadow(
+            0 4px 0 #9b4a00
+        );
+}
+
+
+.hero h2 {
+
+    font-size: 24px;
+
+    margin:
+        4px 0 8px;
+}
+
+
+.hero p {
+
+    margin: 0;
+
+    color: #5e4768;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.name {
+
+    width: 100%;
+
+    padding:
+        13px 15px;
+
+    border:
+        2px solid #c8b7d2;
+
+    border-radius:
+        14px;
+
+    margin:
+        10px 0 4px;
+
+    background: white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.name:focus {
+
+    border-color:
+        var(--purple);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary {
+
+    width: 100%;
+
+    border: 0;
+
+    border-radius: 16px;
+
+    background:
+        var(--purple);
+
+    color: white;
+
+    font-weight: 900;
+
+    padding:
+        15px 18px;
+
+    box-shadow:
+        0 5px 0 #3c187d;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    margin-top: 8px;
+}
+
+
+.primary:active {
+
+    transform:
+        translateY(3px);
+
+    box-shadow:
+        0 2px 0 #3c187d;
+}
+
+
+.secondary {
+
+    width: 100%;
+
+    border:
+        2px solid var(--purple);
+
+    border-radius:
+        15px;
+
+    background: white;
+
+    color: var(--purple);
+
+    font-weight: 800;
+
+    padding: 13px;
+
+    margin-top: 9px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress {
+
+    display: flex;
+
+    gap: 5px;
+
+    margin:
+        2px 0 15px;
+}
+
+
+.dot {
+
+    height: 9px;
+
+    flex: 1;
+
+    border-radius:
+        10px;
+
+    background:
+        #e3d9e8;
+}
+
+
+.dot.done {
+
+    background:
+        var(--orange);
+}
+
+
+/* =========================
+   MISSION
+========================= */
+
+.mission-no {
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    color: var(--purple);
+
+    letter-spacing: .08em;
+}
+
+
+.mission-title {
+
+    font-size: 25px;
+
+    font-weight: 950;
+
+    margin:
+        4px 0 8px;
+}
+
+
+.mission-icon {
+
+    font-size: 54px;
+
+    text-align: center;
+
+    margin: 4px;
+}
+
+
+.instruction {
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    margin:
+        10px 0 14px;
+}
+
+
+.english {
+
+    background:
+        #fff1d2;
+
+    border:
+        2px dashed var(--orange);
+
+    border-radius:
+        16px;
+
+    padding: 14px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: 900;
+}
+
+
+.tip {
+
+    font-size: 12px;
+
+    color: #735f7c;
+
+    margin-top: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SECRET WORD
+========================= */
+
+.answer-box {
+
+    font-size: 25px;
+
+    text-align: center;
+
+    font-weight: 900;
+
+    letter-spacing: .12em;
+
+    background:
+        #f5edff;
+
+    border:
+        2px solid #b99ce4;
+
+    border-radius:
+        14px;
+
+    padding: 14px;
+
+    margin:
+        12px 0;
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+.photo {
+
+    border:
+        3px dashed var(--orange);
+
+    border-radius:
+        18px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background:
+        #fffaf2;
+}
+
+
+.photo input {
+
+    width: 100%;
+
+    margin:
+        8px 0;
+}
+
+
+.preview {
+
+    max-width: 100%;
+
+    max-height: 180px;
+
+    border-radius:
+        14px;
+
+    display: none;
+
+    margin:
+        8px auto;
+}
+
+
+/* =========================
+   SUCCESS
+========================= */
+
+.success {
+
+    text-align: center;
+}
+
+
+.success .big {
+
+    font-size: 72px;
+}
+
+
+.small-badge {
+
+    display: inline-block;
+
+    background:
+        #2d1740;
+
+    color: white;
+
+    border-radius:
+        999px;
+
+    padding:
+        6px 10px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding:
+        10px 18px 30px;
+
+    color:
+        #7a657f;
+
+    font-size: 11px;
+}
+
+
+.hidden {
+
+    display: none !important;
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 20;
+
+    display: none;
+}
+
+
+.confetti span {
+
+    position: absolute;
+
+    font-size: 26px;
+
+    animation:
+        fall 1.8s linear forwards;
+}
+
+
+@keyframes fall {
+
+    0% {
+
+        transform:
+            translateY(-20vh)
+            rotate(0);
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="school-name">
+
+        🎓 アークアカデミー英会話教室
+
+    </div>
+
+
+    <div class="brand">
+
+        🎃 HALLOWEEN ENGLISH EVENT
+
+    </div>
+
+
+    <h1>
+
+        Halloween<br>
+
+        Mission Rally
+
+    </h1>
+
+
+    <div class="subtitle">
+
+        8 missions → Halloween Master!
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     START SCREEN
+========================= -->
+
+<section
+    id="start"
+    class="card hero"
+>
+
+
+    <div class="school-logo-text">
+
+        アークアカデミー英会話教室
+
+    </div>
+
+
+    <div class="pumpkin">
+
+        🎃
+
+    </div>
+
+
+    <h2>
+
+        魔女のミッションを<br>
+
+        クリアしよう！
+
+    </h2>
+
+
+    <p>
+
+        ショッピングモールを舞台にした<br>
+
+        ハロウィン英語ミッションラリー
+
+    </p>
+
+
+    <input
+        id="playerName"
+        class="name"
+        maxlength="20"
+        placeholder="なまえ（任意）"
+    >
+
+
+    <button
+        class="primary"
+        onclick="startGame()"
+    >
+
+        START MISSION 🧙‍♀️
+
+    </button>
+
+
+    <div class="rules">
+
+        走らない・お店の商品に触らない・
+        決められた場所だけで遊ぶ。
+
+        <br>
+
+        困ったら近くのスタッフへ。
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     GAME
+========================= -->
+
+<section
+    id="game"
+    class="hidden"
+>
+
+
+    <div
+        class="progress"
+        id="progress"
+    ></div>
+
+
+    <div
+        id="missionCard"
+        class="card"
+    ></div>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    🎃 アークアカデミー英会話教室 🎃
+
+    <br>
+
+    Happy Halloween! 👻🦇
+
+</footer>
+
+
+</div>
+
+
+
+<div
+    id="confetti"
+    class="confetti"
+></div>
+
+
+
+<script>
+
+
+/* ==========================================
+   MISSIONS
+========================================== */
+
+
+const missions = [
+
+
+/* MISSION 1 */
+
+{
+
+    icon: "🍊",
+
+    no: "MISSION 1",
+
+    title: "ORANGE HUNT",
+
+    html: `
+
+        <div class="instruction">
+
+            オレンジ色のものを
+            <b>5個</b>
+            見つけてね！
+
+            <br><br>
+
+            見つけたら、
+            元気よく英語で言おう。
+
+        </div>
+
+
+        <div class="english">
+
+            “I found orange!” 🧡
+
+        </div>
+
+
+        <div class="tip">
+
+            ※ お店の商品を触らず、
+            目で見つけよう。
+
+        </div>
+
+    `
+},
+
+
+
+/* MISSION 2 */
+
+{
+
+    icon: "👻",
+
+    no: "MISSION 2",
+
+    title: "HALLOWEEN HUNT",
+
+    html: `
+
+        <div class="instruction">
+
+            <b>
+                モンスター・コウモリ・
+                Jack-o'-lantern
+            </b>
+
+            を見つけてね！
+
+        </div>
+
+
+        <div class="answer-box">
+
+            👹　🦇　🎃
+
+        </div>
+
+
+        <div class="tip">
+
+            ※ 会場に用意された
+            ハロウィン装飾やカードを探そう。
+
+        </div>
+
+    `
+},
+
+
+
+/* MISSION 3 */
+
+{
+
+    icon: "🗣️",
+
+    no: "MISSION 3",
+
+    title: "HAPPY HALLOWEEN!",
+
+    html: `
+
+        <div class="instruction">
+
+            <b>3人</b>
+            の人に
+
+            “Happy Halloween!”
+
+            と言ってみよう！
+
+        </div>
+
+
+        <div class="english">
+
+            “Happy Halloween!” 🎃
+
+        </div>
+
+
+        <div class="tip">
+
+            ※ 家族・お友だち・
+            イベントスタッフなど、
+            声をかけてOKな人に。
+
+            <br><br>
+
+            無理に知らない人へ
+            声をかけなくて大丈夫。
+
+        </div>
+
+    `
+},
+
+
+
+/* ==========================================
+   MISSION 4
+   SECRET WORD = BOO!
+========================================== */
+
+{
+
+    icon: "🔍",
+
+    no: "MISSION 4",
+
+    title: "SECRET WORD",
+
+    html: `
+
+        <div class="instruction">
+
+            会場に隠された
+
+            <strong>
+                4文字の秘密の英単語
+            </strong>
+
+            を探してね！
+
+        </div>
+
+
+        <div class="answer-box">
+
+            _ _ _ _
+
+        </div>
+
+
+        <div class="tip">
+
+            👻 ヒント：
+
+            ハロウィンでよく聞く言葉。
+
+            <br><br>
+
+            4文字だよ！
+
+        </div>
+
+
+        <input
+            id="secret"
+            class="name"
+            maxlength="4"
+            autocomplete="off"
+            placeholder="見つけた4文字を入力"
+        >
+
+
+        <button
+            class="secondary"
+            onclick="checkSecret()"
+        >
+
+            CHECK SECRET WORD 🔍
+
+        </button>
+
+
+        <div
+            id="secretMsg"
+            class="tip"
+        ></div>
+
+    `
+},
+
+
+
+/* MISSION 5 */
+
+{
+
+    icon: "👻",
+
+    no: "MISSION 5",
+
+    title: "GHOST COUNT",
+
+    html: `
+
+        <div class="instruction">
+
+            <b>6つのゴースト</b>
+
+            が会場に隠れているよ。
+
+            <br><br>
+
+            全部探してみよう！
+
+        </div>
+
+
+        <div class="answer-box">
+
+            👻 👻 👻 👻 👻 👻
+
+        </div>
+
+
+        <div class="tip">
+
+            6匹全部見つけたら
+            ミッションクリア！
+
+        </div>
+
+    `
+},
+
+
+
+/* MISSION 6 */
+
+{
+
+    icon: "📸",
+
+    no: "MISSION 6",
+
+    title: "PHOTO BOOTH",
+
+    html: `
+
+        <div class="instruction">
+
+            <b>
+                2階の写真ブース
+            </b>
+
+            へ行って、
+
+            <br>
+
+            自分の写真を撮ろう！
+
+        </div>
+
+
+        <div class="photo">
+
+            📷✨
+
+            <br><br>
+
+            <b>
+                PHOTO BOOTH
+            </b>
+
+
+            <br>
+
+
+            <input
+                id="photo"
+                type="file"
+                accept="image/*"
+                capture="environment"
+                onchange="previewPhoto(event)"
+            >
+
+
+            <img
+                id="preview"
+                class="preview"
+                alt="photo preview"
+            >
+
+
+            <div class="tip">
+
+                写真を撮ったら
+                「PHOTO TAKEN」
+                を押してね。
+
+            </div>
+
+        </div>
+
+    `
+},
+
+
+
+/* MISSION 7 */
+
+{
+
+    icon: "✊",
+
+    no: "MISSION 7",
+
+    title: "ROCK, PAPER, SCISSORS!",
+
+    html: `
+
+        <div class="instruction">
+
+            <b>
+                クリストファー先生
+            </b>
+
+            か
+
+            <b>
+                ハツホ先生
+            </b>
+
+            を見つけて、
+
+            <br><br>
+
+            ジャンケン！
+
+        </div>
+
+
+        <div class="english">
+
+            “Rock, Paper, Scissors!”
+
+            <br><br>
+
+            ✊ ✋ ✌️
+
+        </div>
+
+
+        <div class="tip">
+
+            先生に勝ったら、
+            最後のミッションへ！
+
+        </div>
+
+    `
+},
+
+
+
+/* MISSION 8 */
+
+{
+
+    icon: "🍬",
+
+    no: "MISSION 8",
+
+    title: "TRICK OR TREAT!",
+
+    html: `
+
+        <div class="success">
+
+            <div class="big">
+
+                🍬🎃🍬
+
+            </div>
+
+
+            <div class="instruction">
+
+                <b>
+                    🎉 MISSION COMPLETE! 🎉
+                </b>
+
+                <br><br>
+
+                受付へGO!
+
+                <br><br>
+
+                受付で大きな声で
+
+                <br><br>
+
+                <span class="english">
+
+                    “Trick or treat!”
+
+                </span>
+
+                と言って、
+
+                <br><br>
+
+                この画面を見せよう。
+
+            </div>
+
+
+            <span class="small-badge">
+
+                HALLOWEEN MASTER
+
+            </span>
+
+
+            <div class="tip">
+
+                🍬 お菓子をGET！ 🍬
+
+                <br><br>
+
+                Happy Halloween!
+
+            </div>
+
+        </div>
+
+    `
+}
+
+];
+
+
+
+/* ==========================================
+   GAME STATE
+========================================== */
+
+
+let current = 0;
+
+
+/*
+    Mission 4 answer
+
+    BOO!
+*/
+
+let secretAnswer = "BOO!";
+
+
+
+/* ==========================================
+   START
+========================================== */
+
+function startGame() {
+
+
+    const name =
+
+        document
+        .getElementById("playerName")
+        .value
+        .trim();
+
+
+    localStorage.setItem(
+        "halloweenPlayer",
+        name
+    );
+
+
+    document
+        .getElementById("start")
+        .classList
+        .add("hidden");
+
+
+    document
+        .getElementById("game")
+        .classList
+        .remove("hidden");
+
+
+    current = 0;
+
+
+    render();
+
+}
+
+
+
+/* ==========================================
+   RENDER
+========================================== */
+
+function render() {
+
+
+    const progress =
+
+        document
+        .getElementById("progress");
+
+
+    progress.innerHTML =
+
+        missions
+        .map(
+
+            (_, i) =>
+
+            `<div class="dot ${
+                i < current
+                ? "done"
+                : ""
+            }"></div>`
+
+        )
+        .join("");
+
+
+    const mission =
+        missions[current];
+
+
+    let extra = "";
+
+
+    if (current < 7) {
+
+        extra = `
+
+            <button
+                id="completeBtn"
+                class="primary"
+                onclick="completeMission()"
+            >
+
+                ${
+                    current === 5
+                    ? "PHOTO TAKEN ✓"
+                    : current === 6
+                    ? "I WON! 次へ 🎉"
+                    : "MISSION COMPLETE! ✓"
+                }
+
+            </button>
+
+        `;
+
+    }
+
+
+    document
+        .getElementById("missionCard")
+        .innerHTML = `
+
+            <div class="mission-no">
+
+                ${mission.no}
+
+            </div>
+
+
+            <div class="mission-icon">
+
+                ${mission.icon}
+
+            </div>
+
+
+            <div class="mission-title">
+
+                ${mission.title}
+
+            </div>
+
+
+            ${mission.html}
+
+
+            ${extra}
+
+        `;
+
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+
+/* ==========================================
+   COMPLETE MISSION
+========================================== */
+
+function completeMission() {
+
+
+    /*
+        Mission 7
+
+        Teacher confirms
+        the child won.
+    */
+
+    if (current === 6) {
+
+        showWin();
+
+        return;
+
+    }
+
+
+    current++;
+
+
+    if (current === 7) {
+
+        burst();
+
+    }
+
+
+    render();
+
+}
+
+
+
+/* ==========================================
+   MISSION 7 WIN
+========================================== */
+
+function showWin() {
+
+    current = 7;
+
+    burst();
+
+    render();
+
+}
+
+
+
+/* ==========================================
+   MISSION 4
+   ANSWER = BOO!
+========================================== */
+
+function checkSecret() {
+
+
+    const input =
+
+        document
+        .getElementById("secret");
+
+
+    const value =
+
+        (input.value || "")
+        .trim()
+        .toUpperCase();
+
+
+    const message =
+
+        document
+        .getElementById("secretMsg");
+
+
+    if (value === secretAnswer) {
+
+
+        message.textContent =
+
+            "🎉 Correct! BOO! 🎉";
+
+
+        message.style.color =
+            "#19703e";
+
+
+        burst();
+
+
+        setTimeout(
+
+            () => {
+
+                current++;
+
+                render();
+
+            },
+
+            800
+
+        );
+
+
+    }
+
+    else {
+
+
+        message.textContent =
+
+            "もう一度探してみよう！ ヒント：4文字";
+
+
+        message.style.color =
+            "#c44";
+
+    }
+
+}
+
+
+
+/* ==========================================
+   PHOTO
+========================================== */
+
+function previewPhoto(event) {
+
+
+    const file =
+        event.target.files[0];
+
+
+    if (!file) {
+
+        return;
+
+    }
+
+
+    const image =
+
+        document
+        .getElementById("preview");
+
+
+    image.src =
+        URL.createObjectURL(file);
+
+
+    image.style.display =
+        "block";
+
+
+    const button =
+
+        document
+        .getElementById("completeBtn");
+
+
+    if (button) {
+
+        button.textContent =
+            "PHOTO TAKEN ✓";
+
+    }
+
+}
+
+
+
+/* ==========================================
+   CONFETTI
+========================================== */
+
+function burst() {
+
+
+    const container =
+
+        document
+        .getElementById("confetti");
+
+
+    container.innerHTML =
+        "";
+
+
+    const characters = [
+
+        "🎃",
+        "👻",
+        "🦇",
+        "🍬",
+        "✨",
+        "🧙‍♀️"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < 35;
+        i++
+    ) {
+
+
+        const span =
+            document.createElement("span");
+
+
+        span.textContent =
+            characters[
+                i % characters.length
+            ];
+
+
+        span.style.left =
+
+            Math.random() *
+            100 +
+            "%";
+
+
+        span.style.top =
+
+            (-10 -
+            Math.random() * 30)
+            + "%";
+
+
+        span.style.animationDelay =
+
+            Math.random() *
+            .7 +
+            "s";
+
+
+        container.appendChild(
+            span
+        );
+
+    }
+
+
+    container.style.display =
+        "block";
+
+
+    setTimeout(
+
+        () => {
+
+            container.style.display =
+                "none";
+
+        },
+
+        2300
+
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
